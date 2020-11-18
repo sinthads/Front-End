@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(120deg, #206c83, #c567c5,#c5eefa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .wrapper {
+            width: 350px;
+            opacity: 70%;
+            font-family: inherit;
+            font-size: 14px;
+            background-color: rgb(12, 11, 11);
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .wrapper .title{
+            text-align: center;
+            font-size: 26px;
+            color: white;
+            border-radius: 20px;
+            background-color: #0c0c0c;
+        }
+        .wrapper .form .input_field {
+            position: relative;
+            margin: 10px;
+            margin-right: 35px;
+            margin-left: 35px;
+            text-align: center;
+        }
+    
+        .wrapper .form .input {
+            text-align: center;
+            width: 80%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: thin;
+            border-radius: 20px;
+            margin-bottom: 20px;
+
+        }
+        .wrapper .form .button {
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-family: inherit;
+            font-size: inherit;
+            background-color: #3b849b;
+            border: 1px rgba(153, 153, 153, 0.3);
+            border-radius: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            }
+            .wrapper .form .button:hover {
+                opacity:1;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <p>Sign Up</p>
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <input type="text" class="input" id="username" placeholder="Username" required >
+                <input type="text" class="input" id="email" placeholder="Email" required>
+                <input type="password" class="input" id="password" placeholder="Password" required>
+                <input type="password" class="input" id="confPassword" placeholder="Confirm Password" required>
+                <button type="submit" id="btnSubmit" class="button" onclick="register()">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="halaman_register.js"></script>
+</html>
